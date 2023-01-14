@@ -3,9 +3,9 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import ProtectedRoute from "./ProtectedRoute";
-import Table from "../Component/Common/Table";
-import { TableColumnTitles } from "../Constants/constants";
+import ProtectedRoute from "./ABCD";
+import Table from "./Component/Common/Table";
+import { TableColumnTitles } from "./Constants/constants";
 
 const data = [
   {
