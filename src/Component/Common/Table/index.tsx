@@ -1,7 +1,8 @@
 import DataTable from "react-data-table-component";
-import React, { FC, useMemo } from "react";
+import React, { FC, useEffect, useMemo } from "react";
 import { FaEdit } from "react-icons/fa";
 import { BsFillEyeFill } from "react-icons/bs";
+import { Provider, useDispatch } from "react-redux";
 import {
   AiOutlineStar,
   AiFillStar,
@@ -12,6 +13,7 @@ import {
   tableOptions,
   TableColumnTitles,
 } from "../../../Constants/constants";
+import { fetchPosts } from "../../../actions/postActions";
 
 interface IColumns {
   name: string;
@@ -154,6 +156,10 @@ const Table: FC<ITable> = ({ data, columns }) => {
     },
   };
 
+  const dispatch = useDispatch();
+  useEffect(() => {
+    fetchPosts(dispatch);
+  }, []);
   return (
     <>
       <DataTable
