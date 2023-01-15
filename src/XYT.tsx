@@ -6,16 +6,17 @@ import {
 import ProtectedRoute from "./ABCD";
 import Table from "./Component/Common/Table";
 import { TableColumnTitles } from "./Constants/constants";
+import { data } from "./Component/Common/Table/data";
 
-const data = [
-  {
-    id: 1,
-    prescriptionName: "Diabetes",
-    doctorName: "Dr Shenelle Moses",
-    datePrescribed: "08.10.2022",
-    nextRefillDate: "08.20.2021",
-  },
-];
+// const data = [
+//   {
+//     id: 1,
+//     prescriptionName: "Diabetes",
+//     doctorName: "Dr Shenelle Moses",
+//     datePrescribed: "08.10.2022",
+//     nextRefillDate: "08.20.2021",
+//   },
+// ];
 
 const columns = [
   {
